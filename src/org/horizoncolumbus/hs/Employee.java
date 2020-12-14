@@ -1,13 +1,17 @@
 package org.horizoncolumbus.hs;
 
 public class Employee {
-    private String salary;
+    private int salary;
 
-    public String getSalary(){
+    Employee(int s){
+        salary = s;
+    }
+
+    public int getSalary(){
         return salary;
     }
 
-    public void setSalary(String yearlySalary){
-        this.salary = yearlySalary;
+    public void setSalary(int s){
+        salary = s;
     }
 }
